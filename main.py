@@ -26,7 +26,7 @@ if __name__ == '__main__':
 
         def get_photos_profile(self, user_id, friends_id):
             url = self.url + 'photos.get'
-            for friend_id in tqdm(friends_id, colour='blue', desc=f"Загрузка фотографий профиля 5 друзей ID{user_id}"):
+            for friend_id in tqdm(friends_id, colour='blue', desc=f"Загрузка фотографий профилей друзей ID{user_id}"):
                 url_params = {
                     'owner_id': friend_id,
                     'album_id': 'profile',
